@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body.welcome-page {
+  background: url('../img/background.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.overlay {
+  background-color: rgba(0, 50, 92, 0.7);
+  min-height: 100vh;
+  padding: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 700px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+  color: #ccc;
+}
+
+.rules {
+  text-align: left;
+  margin: 2em auto;
+  padding-left: 1.5em;
+  font-size: 1em;
+}
+
+.rules li {
+  margin: 0.5em 0;
+}
+
+.start-btn {
+  background: #00b894;
+  color: white;
+  padding: 0.8em 1.5em;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.start-btn:hover {
+  background: #019270;
+}
+
+/* Página do jogo */
+body.game-page {
+  background:rgba(245, 245, 245, 0.7);
+  padding: 2em;
+}
+
+.stack {
+  border: 2px dashed #ccc;
+  padding: 1em;
+  min-height: 100px;
+  background: white;
+  margin: 1em;
+  border-radius: 8px;
+}
+
+.controls, .commands, .history {
+  margin-top: 2em;
+  text-align: center;
+}
+
+button {
+  margin: 0.3em;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  border: none;
+  background-color: #0984e3;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+pre {
+  background: #eee;
+  padding: 1em;
+  border-radius: 6px;
+}

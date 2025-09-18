@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Push Swap - </title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body class="game-page">
+  <header class="rules">
+    <h1>Push Swap</h1>
+    <h2>Organize os números da stack A usando apenas os comandos permitidos.</h2>
+    <h4> A stack b deve ser orgazinada por ordem descrecente! >_D</h4>
+  </header>
+
+  <section class="controls">
+    <label for="size">Tamanho da lista:</label>
+    <input type="number" id="size" min="2" max="10" value="5">
+    <button id="generate">Gerar Lista</button>
+  </section>
+
+  <section class="stacks">
+    <div class="stack" id="stack-a">
+      <h2>Stack A</h2>
+      <div class="elements" id="elements-a"></div>
+    </div>
+    <div class="stack" id="stack-b">
+      <h2>Stack B</h2>
+      <div class="elements" id="elements-b"></div>
+    </div>
+  </section>
+
+  <section class="commands">
+    <h3>Comandos</h3>
+    <div>
+      <button id="sw-a">sw (A)</button>
+      <button id="ra-a">ra (A)</button>
+      <button id="rra-a">rra (A)</button>
+      <button id="pb">pb</button>
+    </div>
+    <div>
+      <button id="sw-b">sw (B)</button>
+      <button id="ra-b">ra (B)</button>
+      <button id="rra-b">rra (B)</button>
+      <button id="pa">pa</button>
+    </div>
+  </section>
+
+  <section class="history">
+    <button id="show-history">Mostrar Histórico</button>
+    <pre id="history-log">lista de comando vazia</pre>
+  </section>
+</body>
+</html>
